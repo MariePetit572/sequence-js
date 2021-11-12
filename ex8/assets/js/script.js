@@ -1,7 +1,16 @@
 var img=document.getElementByID('img');
-img.addEventListener('mouseover', function(event){
-    event.target.src='../img/chat2.webp'
-})
-img.removeEventListener('mouseout',function(){
-    this.src='../img/chat1.webp'
-})
+img.onmouseover=()=>
+{
+    if(img.getAttribute('src')=='assets/img/chat1.webp') {
+
+
+    img.getAttribute('src','assets/img/chat2.webp'); }
+    else{
+        img.onmouseout('src','assets/img/chat1.webp');
+    }
+}
+
+
+
+
+
