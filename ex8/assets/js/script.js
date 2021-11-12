@@ -1,14 +1,16 @@
-var img=document.getElementByID('img');
-img.onmouseover=()=>
-{
-    if(img.getAttribute('src')=='assets/img/chat1.webp') {
-
-
-    img.getAttribute('src','assets/img/chat2.webp'); }
-    else{
-        img.onmouseout('src','assets/img/chat1.webp');
+var img=document.getElementById('img');
+img.onmouseover=function(){
+        img.src='assets/img/chat2.webp';
+    }
+img.onmouseout=function(){
+    img.onmouseout=function(){
+        img.src='assets/img/chat1.webp'
     }
 }
+
+
+
+
 
 
 
