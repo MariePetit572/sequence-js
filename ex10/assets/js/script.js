@@ -1,5 +1,6 @@
 var prenom='Marie';
 var userName=document.getElementById('userName');
+var blocAlert=document.getElementById('blocAlert');
 
 userName.addEventListener('keyup', function () {
     if (userName.value!=prenom) {
